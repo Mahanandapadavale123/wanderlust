@@ -1,0 +1,97 @@
+body{
+    font-family: sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: red;
+}
+
+/* .footer{
+    height: 10rem;
+    background-color: aliceblue;
+    display: flex !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+} */
+.f-info-links a{
+text-decoration: none;
+}
+
+.f-info-links:hover{
+    text-decoration: underline;
+}
+
+.f-info-links{
+    width: 100%;
+}
+
+.f-info-socials{
+    width: 100%;
+}
+
+
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem !important;
+}
+.f-info {
+    text-align: center !important;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: space-evenly !important;
+}
+
+.card{
+border: none !important;
+margin-bottom: 2rem;
+}
+
+.card-img-top{
+border-radius: 2rem !important;
+width: 100%;
+object-fit: cover !important;
+}
+
+.card-body{
+padding: 0%;
+}
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.5;
+background-color: white;
+}
+
+/* edit page */
+.edit-btn{
+    background-color: red !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+
+#map {
+     height: 80vh;
+     width: 100%; }

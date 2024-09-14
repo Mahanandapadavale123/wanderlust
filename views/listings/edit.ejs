@@ -1,0 +1,42 @@
+<% layout("/layout/boilerplate") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <h3>Edit the Listing</h3>
+        <form method="POST" action="/listings/<%=listing._id.toString().trim()%>?_method=PUT">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label>
+                <input class="form-control" type="text" name="listing[title]" value="<%= listing.title %>" placeholder="Enter the title" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" name="listing[description]" placeholder="Enter the description" required><%= listing.description %></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload New Image</label>
+                <input class="form-control" name="listing[image]" type="file"  required>
+            </div>
+
+            <div class="row">
+                <div class="mb-3 col-4">
+                    <label for="price" class="form-label">Price:</label>
+                    <input class="form-control" type="number" name="listing[price]" value="<%= listing.price %>" placeholder="Enter the price" required>
+                </div>
+                <div class="mb-3 col-8">
+                    <label for="country" class="form-label">Country</label>
+                    <input class="form-control" type="text" name="listing[country]" value="<%= listing.country %>" placeholder="Select the country" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input class="form-control" type="text" name="listing[location]" value="<%= listing.location %>" placeholder="Enter the location">
+            </div>
+
+            <button class="btn btn-dark">Edit</button>
+        </form>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
